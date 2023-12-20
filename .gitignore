@@ -1,0 +1,7 @@
+# ignore pycache
+*.pyc
+
+# ignore local virtual env
+/app/openai-env/
+
+*.env
