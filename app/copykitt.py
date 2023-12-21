@@ -2,7 +2,7 @@ from openai import OpenAI
 import argparse
 import os
 
-MAX_INPUT_LENGTH = 24
+MAX_INPUT_LENGTH = 32
 
 def main():
     print("Running Copy Kitt")
