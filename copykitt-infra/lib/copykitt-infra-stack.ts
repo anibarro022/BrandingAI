@@ -19,6 +19,7 @@ export class CopykittInfraStack extends cdk.Stack {
       runtime: lambda.Runtime.PYTHON_3_7,
       code: lambda.Code.fromAsset("../app/"),
       handler: "copykitt_api.handler",
+      timeout: cdk.Duration.seconds(15),
       layers: [layer],
       environment: {
         OPENAI_API_KEY: process.env.OPENAI_API_KEY ?? '',
